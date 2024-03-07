@@ -12,7 +12,7 @@ export const getNews = createAsyncThunk(
       return response;
     } catch (err) {
       console.log('Throw Error ::', err);
-      return rejectWithValue('Something Went Wrong');
+      return rejectWithValue('Network Request Failed');
     }
   },
 );
